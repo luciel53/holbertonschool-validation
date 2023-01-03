@@ -1,8 +1,9 @@
 build:
-	hugo
+	hugo -s
 
 clean:
 	rm -r dist/*
 
 post:
-	hugo new posts/$(POST_NAME).md title = $('POST_TITLE')
+	hugo new posts/$(POST_NAME).md
+	sed -e 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
