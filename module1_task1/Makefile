@@ -5,5 +5,4 @@ clean:
 	rm -r dist/*
 
 post:
-	hugo new posts/$(POST_TITLE).md
-	hugo new posts/$(POST_NAME).md
+	hugo new posts/$(POST_NAME).md title = $('POST_TITLE')
