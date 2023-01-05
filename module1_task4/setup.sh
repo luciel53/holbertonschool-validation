@@ -1,7 +1,6 @@
 #!/bin/bash
-sudo apt install hugo
-$ hugo version
-Hugo Static Site Generator v0.80.0-792EF0F4/extended linux/amd64 BuildDate: ...
+sudo apt-get update && apt install hugo
+sudo apt install golang-go 
 
 make build
 
