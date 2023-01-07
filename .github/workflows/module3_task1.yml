@@ -36,7 +36,7 @@ jobs:
       - name: clean up the dist
         run: |
           cd module3_task1
-          clean
+          make clean
 
       - name: Lint
         run: |
