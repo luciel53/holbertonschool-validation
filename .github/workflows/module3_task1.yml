@@ -39,4 +39,6 @@ jobs:
           make clean
           
       - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+        run: 
+          cd module3_task1
+          ibiqlik/action-yamllint@v3
