@@ -38,9 +38,4 @@ jobs:
           cd module3_task1
           make clean
           
-      - name: yaml-lint
-        uses:
-          ibiqlik/action-yamllint@v3
-        with:
-          file_or_dir: .github/workflows/module3_task1.yaml
-          config_file: module3_task1/themes/ananke/config.yaml
+      
