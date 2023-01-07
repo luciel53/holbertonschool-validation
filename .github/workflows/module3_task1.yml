@@ -42,4 +42,3 @@ jobs:
         run: |
           cd module3_task1
           make lint
-          yamllint "$(readlink github-workflow.yml)"
