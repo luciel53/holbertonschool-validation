@@ -11,5 +11,3 @@ post: ## Create a new blog post whose filename and title come from the environme
 help: ## prints out the list of targets and their usage.
 	cat Makefile | grep "##" | tr -d '##'
 
-lint: ## read the yaml file and checks errors
-	yamllint "$(readlink github-workflow.yml)" --no-warnings >/dev/null 2>&1 && echo OK
