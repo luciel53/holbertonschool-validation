@@ -17,7 +17,7 @@ jobs:
       # Run the setup.sh to install missing tools
       - name: Setup environment
         run: 
-          bash ./setup.sh
+          ./module3_task1/setup.sh
         
       # To use the makefile
       - name: Build
