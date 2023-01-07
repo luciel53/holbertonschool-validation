@@ -21,7 +21,7 @@ jobs:
         
       # To use the makefile
       - name: Build
-        run: 
+        run: |
           cd module3_task1
           make build
         
