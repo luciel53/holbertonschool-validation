@@ -41,4 +41,6 @@ jobs:
       - name: yaml-lint
         uses:
           ibiqlik/action-yamllint@v3
-          # yamllint disable-line rule:document-start
+        with:
+            file_or_dir: .github/workflows/module3_task1.yaml
+            config_file: .yamllint.yml
