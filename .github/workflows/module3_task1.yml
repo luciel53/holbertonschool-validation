@@ -41,3 +41,4 @@ jobs:
       - name: yaml-lint
         uses:
           ibiqlik/action-yamllint@v3
+          # yamllint disable-line rule:document-start
