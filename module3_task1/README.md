@@ -29,3 +29,10 @@ This project needs the following tools / services:
     - yq
     - shellcheck
 
+## Build Workflow
+
+Regarding the tooling, you have to:
+
+* Ensure that the workflow is executed into an Ubuntu 18.04 execution environment
+* Ensure that all the required tools are installed prior to any make target, by executing the script setup.sh
+    - The script should be modified to only install missing tools (no make target are expected)
