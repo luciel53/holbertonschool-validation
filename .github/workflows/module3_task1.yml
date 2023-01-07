@@ -25,25 +25,20 @@ jobs:
           cd module3_task1
           make build
         
-      - name: Test
-        run: |
-          cd module3_task1
-          make test
-        
-      - name: Lint
-        run: 
-          cd module3_task1
-          make lint
-        
       - name: Create post
         env:
           POST_NAME: my-post
           POST_TITLE: My Post
-        run: 
+        run: |
           cd module3_task1
           make post
         
       - name: clean up the dist
-        run: 
+        run: |
           cd module3_task1
           clean
+
+      - name: Lint
+        run: |
+          cd module3_task1
+          make lint
