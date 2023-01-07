@@ -10,12 +10,33 @@ on:
 
 jobs:
   module3_task1:
-    runs-on: ubuntu 18.04
+    runs-on: ubuntu-18.04
     steps:
       - name: checkout the repository
         uses: actions/checkout@v3
-      - name: create new workflow
-        run: |
-          git clone https://github.com/luciel53/holbertonschool-validation.git
-          cd module3_task1
-          make build
+      # Run the setup.sh to install missing tools
+      - name: Setup environment
+        run: bash ./setup.sh
+        
+      # To use the makefile
+      - name: Build
+        run: make build
+        
+      - name: Test
+        run: make test
+        
+      - name: Lint
+        run: make lint
+        
+      - name: Create post
+        env:
+          POST_NAME: my-post
+          POST_TITLE: My Post
+        run: make post
+        
+      - name: clean up the dist
+        run: clean
+        
+      
+
+      
