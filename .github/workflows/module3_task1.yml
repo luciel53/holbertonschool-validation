@@ -37,8 +37,6 @@ jobs:
         run: |
           cd module3_task1
           make clean
-
-      - name: Lint
-        run: |
-          cd module3_task1
-          yamllint "$(readlink github-workflow.yml)"
+          
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
