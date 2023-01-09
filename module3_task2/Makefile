@@ -20,3 +20,5 @@ package: ## produces a file awesome-website.zip, containing the binary awesome-a
 unit-tests: ## ERROR: No mention of target unit-tests found in ./README.md
 
 integration-tests: ## ERROR: No comment found for target integration-tests in ./Makefile
+
+validate: ## ERROR: No comment found for target validate in ./Makefile
