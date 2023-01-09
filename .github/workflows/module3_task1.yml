@@ -38,3 +38,8 @@ jobs:
         run: |
           cd module3_task1
           make clean
+
+      - name: yaml-lint
+        run: |
+          cd module3_task1
+          make lint
