@@ -34,12 +34,12 @@ jobs:
           cd module3_task1
           make post
         
-      - name: clean up the dist
-        run: |
-          cd module3_task1
-          make clean
-
       - name: yaml-lint
         run: |
           cd module3_task1
           make lint
+          
+      - name: clean up the dist
+        run: |
+          cd module3_task1
+          make clean
