@@ -13,3 +13,6 @@ help: ## prints out the list of targets and their usage.
 
 lint: ## prints the yaml file
 	yamllint "$(SHELLCHECK)" setup.sh >/dev/null 2>&1 || echo "Lint Failed"
+
+package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
+	zip -q awesome-website.zip awasome-api dist/
