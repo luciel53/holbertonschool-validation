@@ -32,7 +32,7 @@ jobs:
         run: |
           cd module3_task2
           make post
-      - name: yaml-lint
+      - name: markdownlint
         run: |
           cd module3_task2
           make lint
