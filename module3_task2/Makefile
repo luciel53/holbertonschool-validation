@@ -12,10 +12,11 @@ help: ## prints out the list of targets and their usage.
 	cat Makefile | grep "##" | tr -d '##'
 
 lint: ## lint the files README.md and DEPLOY.md with markdownlint command line
+	yamllint "$(SHELLCHECK)" setup.sh >/dev/null 2>&1 || echo "Lint Failed"
 	markdownlint README.md DEPLOY.md
 
 package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
-	zip awesome-website.zip dist/ awesome-api
+	zip -q awesome-website.zip dist/ awesome-api
 
 unit-tests: ## ERROR: No mention of target unit-tests found in ./README.md
 
