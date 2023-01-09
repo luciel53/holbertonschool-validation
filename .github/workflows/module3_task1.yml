@@ -2,10 +2,10 @@
 name: module3_task1
 on:
   schedule:
-  # workflow triggered each day
+    # workflow triggered each day
     - cron: '30 5 * * *'
   push:
-  # trigger each push event
+    # trigger each push event
     branches:
       - main
 
@@ -38,4 +38,3 @@ jobs:
         run: |
           cd module3_task1
           make clean
-          
