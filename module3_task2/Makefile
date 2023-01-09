@@ -16,3 +16,6 @@ lint: ## prints the yaml file
 
 package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
 	zip -q awesome-website.zip awasome-api dist/
+
+unit-tests: ## Documentation must be up to date according to the new make targets (Makefile and README.md)
+	Documentation must be up to date according to the new make targets (Makefile and README.md)
