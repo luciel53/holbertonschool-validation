@@ -12,4 +12,4 @@ help: ## prints out the list of targets and their usage.
 	cat Makefile | grep "##" | tr -d '##'
 
 lint: ## prints the yaml file
-	yamllint "$(SHELLCHECK) setup.sh >/dev/null 2>&1 || echo "Lint Failed"
+	yamllint "$(SHELLCHECK) setup.sh >/dev/null 2>&1 || echo "Lint Failed" "
