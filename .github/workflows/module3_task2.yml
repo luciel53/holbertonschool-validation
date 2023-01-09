@@ -61,4 +61,4 @@ jobs:
         with:
           name: artifact
           path: |
-            cd module3_task2
+            cd module3_task2/awesome-website.zip
