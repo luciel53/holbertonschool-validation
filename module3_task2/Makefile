@@ -18,4 +18,4 @@ package: ## produces a file awesome-website.zip, containing the binary awesome-a
 	zip -q awesome-website.zip awasome-api dist/
 
 unit-tests: ## Documentation must be up to date according to the new make targets (Makefile and README.md)
-	Documentation must be up to date according to the new make targets (Makefile and README.md)
+	ERROR: No mention of target unit-tests found in ./README.md

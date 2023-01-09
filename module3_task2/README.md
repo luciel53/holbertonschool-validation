@@ -22,6 +22,8 @@
 * `help` : prints out the list of targets and their usage.
 * `lint` : Print the yaml file
 * `package` : Produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
+* `unit-tests`: Documentation must be up to date according to the new make targets (Makefile and README.md)
+
 
 ## Workflow
 
