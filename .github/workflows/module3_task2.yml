@@ -44,3 +44,7 @@ jobs:
         run: |
           cd module3_task2
           make package
+      - name: unit-tests
+        run: |
+          cd module3_task2
+          make unit-tests
