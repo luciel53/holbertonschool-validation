@@ -18,3 +18,5 @@ package: ## produces a file awesome-website.zip, containing the binary awesome-a
 	zip -q awesome-website.zip awasome-api dist/
 
 unit-tests: ## ERROR: No mention of target unit-tests found in ./README.md
+
+integration-tests: ## ERROR: No comment found for target integration-tests in ./Makefile
