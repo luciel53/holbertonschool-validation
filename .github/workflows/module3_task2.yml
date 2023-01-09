@@ -1,5 +1,5 @@
 ---
-name: module3_task1
+name: module3_task2
 on:
   schedule:
     # workflow triggered each day
@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  module3_task1:
+  module3_task2:
     runs-on: ubuntu-18.04
     steps:
       - name: checkout the repository
@@ -18,25 +18,29 @@ jobs:
       # Run the setup.sh to install missing tools
       - name: Setup environment
         run: |
-          cd module3_task1/
+          cd module3_task2/
           sudo ./setup.sh
       # To use the makefile
       - name: Build
         run: |
-          cd module3_task1
+          cd module3_task2
           make build
       - name: Create post
         env:
           POST_NAME: my-post
           POST_TITLE: My Post
         run: |
-          cd module3_task1
+          cd module3_task2
           make post
       - name: yaml-lint
         run: |
-          cd module3_task1
+          cd module3_task2
           make lint
       - name: clean up the dist
         run: |
-          cd module3_task1
+          cd module3_task2
           make clean
+      - name: package
+        run: |
+          cd module3_task2
+          make package
