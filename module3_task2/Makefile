@@ -11,8 +11,8 @@ post: ## Create a new blog post whose filename and title come from the environme
 help: ## prints out the list of targets and their usage.
 	cat Makefile | grep "##" | tr -d '##'
 
-lint: ## prints the yaml file
-	yamllint "$(SHELLCHECK)" setup.sh >/dev/null 2>&1 || echo "Lint Failed"
+lint: ## lint the files README.md and DEPLOY.md with markdownlint command line
+	markdownlint
 
 package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
 	zip -q awesome-website.zip awasome-api dist/
