@@ -16,7 +16,7 @@ lint: ## lint the files README.md and DEPLOY.md with markdownlint command line
 	markdownlint README.md DEPLOY.md
 
 package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist/ directory
-	zip -q awesome-website.zip dist/
+	zip awesome-website.zip dist/
 
 unit-tests: ## ERROR: No mention of target unit-tests found in ./README.md
 
