@@ -8,8 +8,6 @@ on:
     # trigger each push event
     branches:
       - main
-  tags:
-      - v1.**
 
 jobs:
   module3_task3:
@@ -64,6 +62,8 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
+          tags:
+            1.0.0
           files: |
             /module3_task3/DEPLOY.md
             /module3_task3/awesome-website.zip
