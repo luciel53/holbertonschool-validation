@@ -57,6 +57,7 @@ jobs:
           cd module3_task2
           make validate
       - name: Archive production artifacts
+        if: ${{ success()}}
         uses: actions/upload-artifact@v3
         with:
           name: artifact
