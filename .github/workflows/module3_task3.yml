@@ -8,6 +8,8 @@ on:
     # trigger each push event
     branches:
       - main
+    tags:
+      - v1.**
 
 jobs:
   module3_task3:
@@ -59,3 +61,5 @@ jobs:
         with:
           name: upload-pakage
           path: module3_task3/awesome-website.zip
+      - name: Release
+        uses: softprops/action-gh-release@v1
