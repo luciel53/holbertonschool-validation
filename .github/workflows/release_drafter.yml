@@ -1,5 +1,5 @@
 ---
-name: release-drafter
+name: release_drafter
 on:
   schedule:
     # workflow triggered each day
@@ -12,7 +12,7 @@ on:
     types: [opened, reopened]
 
 jobs:
-  release-drafter:
+  release_drafter:
     runs-on: ubuntu-18.04
     permissions:
       # write permission is required to create a github release
