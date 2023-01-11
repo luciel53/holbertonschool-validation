@@ -22,7 +22,7 @@ jobs:
       pull-requests: write
     steps:
       # (Optional) GitHub Enterprise requires GHE_HOST variable set
-      #- name: Set GHE_HOST
+      # - name: Set GHE_HOST
       #  run: |
       #    echo "GHE_HOST=${GITHUB_SERVER_URL##https:\/\/}" >> $GITHUB_ENV
 
