@@ -21,6 +21,7 @@ package: ## produces a file awesome-website.zip, containing the binary awesome-a
 	zip awesome-website.zip dist/
 
 unit-tests: ## ERROR: No mention of target unit-tests found in ./README.md
+	touch coverage-units.out
 
 integration-tests: ## ERROR: No comment found for target integration-tests in ./Makefile
 
